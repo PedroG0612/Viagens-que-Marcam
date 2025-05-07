@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+body {
+  background-color: #FAF9F6;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FF8057;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.Título {
+  font-family: 'Fredoka', cursive;
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+
+/* Menu hamburguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+nav .Tópicos {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.Tópicos li {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: #FF7F50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.Tópicos li:hover {
+  background-color: #00695C;
+  cursor: pointer;
+}
+
+.Tópicos.show {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  margin-top: 40px;
+}
+
+.botao-container{
+  display: flex;
+  justify-content: center;
+}
+
+.botao{
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px auto ;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #FF7F50;
+  padding: 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+
+
+
+}
+.botao:hover{
+  cursor: pointer;
+}
+.h3{
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  
+}
+
+
+
+.Lugares p {
+  background-color: #E3F2FD;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 10%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Locais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.Locais li {
+  text-align: center;
+}
+
+.Locais img {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.Locais img:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.container p {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #F2EFE7;
+  text-align: center;
+  font-size: 14px;
+}
+
+.imagem-desktop,
+.imagem-tablet,
+.imagem-celular {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Estilos para o menu hambúrguer em telas menores */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav .Tópicos {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #FF7F50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  nav .Tópicos.show {
+    display: flex;
+  }
+
+  .Tópicos li {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #FF7F50;
+  }
+
+  .Tópicos li:hover {
+    background-color: #00695C;
+  }
+}
