@@ -172,14 +172,6 @@ footer {
   font-size: 14px;
 }
 
-.imagem-desktop,
-.imagem-tablet,
-.imagem-celular {
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* Estilos para o menu hambúrguer em telas menores */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
